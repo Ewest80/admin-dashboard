@@ -22,16 +22,22 @@
     <!-- Header -->
     <header class="header">
       <div class="search-container">
-        <label for="search"></label>
+        <label for="search">
+          <img src="./images/magnify.svg" alt="Search" />
+        </label>
         <input type="text" name="search" id="search" />
       </div>
       <div class="user-container">
-        <img src="" alt="Notification icon" class="notification" />
-        <img src="" alt="User Profile" class="user-profile-sm" />
+        <img
+          src="./images/bell-ring-outline.svg"
+          alt="Notification icon"
+          class="notification"
+        />
+        <img src="" alt="User Profile" class="user-profile" />
         <h3>Morgan Oakley</h3>
       </div>
       <div class="welcome-container">
-        <img src="" alt="User profile image" class="user-profile" />
+        <img src="" alt="User profile image" class="user-profile-lg" />
         <p class="welcome-msg">Hi there,</p>
         <h3 class="user-name">Morgan Oakley (@morgan)</h3>
       </div>
@@ -42,52 +48,237 @@
       </div>
     </header>
     <!-- Sidebar -->
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="logo">
-        <img src="" alt="" class="logo-img" />
+        <img
+          src="./images/view-dashboard.svg"
+          alt="Dashboard icon"
+          class="filter-white"
+        />
         <h3>Dashboard</h3>
       </div>
       <!-- Nav Links -->
-      <nav class="nav-links">
+      <div class="nav-links">
         <ul>
           <li>
-            <img src="" alt="Home" />
+            <img src="./images/home.svg" alt="Home" class="filter-white" />
             <p>Home</p>
           </li>
           <li>
-            <img src="" alt="Profile" />
+            <img
+              src="./images/card-account-details-outline.svg"
+              alt="Profile"
+              class="filter-white"
+            />
             <p>Profile</p>
           </li>
           <li>
-            <img src="" alt="Messages" />
+            <img
+              src="./images/message.svg"
+              alt="Messages"
+              class="filter-white"
+            />
             <p>Messages</p>
           </li>
           <li>
-            <img src="" alt="History" />
+            <img
+              src="./images/clock-time-three.svg"
+              alt="History"
+              class="filter-white"
+            />
             <p>History</p>
           </li>
           <li>
-            <img src="" alt="Tasks" />
+            <img
+              src="./images/clipboard-multiple.svg"
+              alt="Tasks"
+              class="filter-white"
+            />
             <p>Tasks</p>
           </li>
           <li>
-            <img src="" alt="Communities" />
+            <img
+              src="./images/account-group.svg"
+              alt="Communities"
+              class="filter-white"
+            />
             <p>Communities</p>
           </li>
           <li>
-            <img src="" alt="Settings" />
+            <img src="./images/cog.svg" alt="Settings" class="filter-white" />
             <p>Settings</p>
           </li>
           <li>
-            <img src="" alt="Support" />
+            <img
+              src="./images/help-box.svg"
+              alt="Support"
+              class="filter-white"
+            />
             <p>Support</p>
           </li>
           <li>
-            <img src="" alt="Privacy" />
+            <img
+              src="./images/shield-check.svg"
+              alt="Privacy"
+              class="filter-white"
+            />
             <p>Privacy</p>
           </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
     <!-- Main Content -->
+    <main class="container">
+      <div class="projects">
+        <h4>Your Projects</h4>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Super Cool Project</h5>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+              nesciunt a beatae debitis tempore deleniti odit dolorem veniam
+              architecto accusantium at alias, laudantium quas! Nobis animi
+              cupiditate hic cum tempore.
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Less Cool Project</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+              ipsum doloremque sint earum deserunt laborum facilis molestias
+              fuga? Dolore, maiores.
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Impossible App</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              perspiciatis autem, blanditiis eveniet molestias velit!
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Easy Peasy App</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iste
+              nemo autem earum vitae dignissimos, a illo quis consequuntur at
+              nisi libero maxime.
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Ad Blocker</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic esse
+              necessitatibus vitae molestias consequatur similique, nesciunt
+              delectus reprehenderit consectetur, accusantium ab, laboriosam
+              obcaecati.
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-text">
+            <h5 class="project-title">Money Maker</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, adipisci sed recusandae vitae quos asperiores quia
+              doloremque tenetur! Necessitatibus, numquam?
+            </p>
+          </div>
+          <div class="project-interaction">
+            <img src="./images/star-plus-outline.svg" alt="Favorite icon" />
+            <img src="./images/eye-plus-outline.svg" alt="View icon" />
+            <img src="./images/share-variant-outline.svg" alt="Share icon" />
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-right">
+        <div class="announcements">
+          <h4>Announcements</h4>
+          <div class="announcement-container">
+            <div class="announce">
+              <h6>Site Maintenance</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                esse minus deleniti...
+              </p>
+            </div>
+            <hr />
+            <div class="announce">
+              <h6>Community Share Day</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                vel expedita, ad nesciunt velit doloribus...
+              </p>
+            </div>
+            <hr />
+            <div class="announce">
+              <h6>Updated Privacy Policy</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur veritatis quas facilis quod molestias dolores ipsum
+                consequatur...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending">
+          <h4>Trending</h4>
+          <div class="trending-container">
+            <div class="trend">
+              <img src="" alt="user profile image" class="user-profile" />
+              <p class="user-handle">@tegan</p>
+              <p class="trending-project">World Peace Builder</p>
+            </div>
+            <div class="trend">
+              <img src="" alt="user profile image" class="user-profile" />
+              <p class="user-handle">@morgan</p>
+              <p class="trending-project">Super Cool Project</p>
+            </div>
+            <div class="trend">
+              <img src="" alt="user profile image" class="user-profile" />
+              <p class="user-handle">@kendall</p>
+              <p class="trending-project">Life Changing App</p>
+            </div>
+            <div class="trend">
+              <img src="" alt="user profile image" class="user-profile" />
+              <p class="user-handle">@alex</p>
+              <p class="trending-project">No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
