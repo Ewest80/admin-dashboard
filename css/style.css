@@ -149,6 +149,11 @@ textarea:not([rows]) {
   grid-template-columns: 40px 1fr;
 }
 
+.header .search label {
+  margin: auto;
+}
+
+
 .header .search input {
   border: none;
   background-color: var(--clr-searchbar);
@@ -334,7 +339,7 @@ textarea:not([rows]) {
 }
 
 .announcement-container h4 + p {
-  padding-top: 4px;
+  margin-top: 4px;
 }
 
 .trending-container .trending {
