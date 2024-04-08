@@ -356,6 +356,13 @@ textarea:not([rows]) {
   height: 48px;
 }
 
+/* Lower text opacity */
+.project-text p,
+.announce p,
+.trending p:nth-child(2) {
+  opacity: 0.7;
+}
+
 /* Utility classes */
 
 .fw-light {
