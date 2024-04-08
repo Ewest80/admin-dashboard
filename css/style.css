@@ -292,6 +292,10 @@ textarea:not([rows]) {
   transform: scale(1.02);
 }
 
+.project-card:hover > .card-color-bar {
+  background-color: var(--clr-primary-dark)
+}
+
 .project-card .card-color-bar {
   grid-row: 1 / -1;
   grid-column: 1;
