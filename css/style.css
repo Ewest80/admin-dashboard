@@ -121,6 +121,16 @@ textarea:not([rows]) {
   min-height: 100vh;
 }
 
+.icon {
+  width: 24px;
+  transition: transform 0.2s;
+}
+
+.interactable-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 
 /* Header */
 .header {
@@ -328,9 +338,6 @@ textarea:not([rows]) {
 }
 
 /* Utility classes */
-.icon {
-  width: 24px;
-}
 
 .fw-light {
   font-weight: var(--fw-light);
