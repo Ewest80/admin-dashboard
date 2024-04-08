@@ -131,6 +131,10 @@ textarea:not([rows]) {
   transform: scale(1.2);
 }
 
+.interactable-icon:active {
+  transform: scale(1);
+}
+
 
 /* Header */
 .header {
