@@ -18,3 +18,4 @@ using HTML and CSS.
 
 - HTML
 - CSS
+- User icons from [Icons8](https://icons8.com/)
