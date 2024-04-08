@@ -257,14 +257,14 @@ textarea:not([rows]) {
 
 .projects .project-card {
   display: grid;
-  grid-template: 1fr auto / auto 1fr;
+  grid-template: 1fr min-content / auto 1fr;
   background-color: var(--clr-primary-light);
   border-radius: 0.5rem;
   box-shadow: 2px 2px 5px 2px var(--clr-outline);
 }
 
 .project-card .card-color-bar {
-  grid-row: 1 / 4;
+  grid-row: 1 / -1;
   grid-column: 1;
   width: .75rem;
   border-radius: 0.5rem 0 0 0.5rem;
@@ -295,7 +295,36 @@ textarea:not([rows]) {
 /* Main content sidebar */
 
 .main-content-sidebar {
-  
+  display: grid;
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.main-content-sidebar .announcement-container,
+.main-content-sidebar .trending-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--clr-primary-light);
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  box-shadow: 2px 2px 5px 2px var(--clr-outline);
+}
+
+.announcement-container h4 + p {
+  padding-top: 4px;
+}
+
+.trending-container .trending {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trending img {
+  width: 48px;
+  height: 48px;
 }
 
 /* Utility classes */
