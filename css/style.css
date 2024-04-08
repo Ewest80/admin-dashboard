@@ -63,6 +63,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: var(--ff-body);
+  font-size: var(--fs-body);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -81,6 +82,10 @@ h3, h4 {
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -171,6 +176,7 @@ textarea:not([rows]) {
 }
 
 .btn {
+  font-size: var(--fs-button);
   width: 6.5rem;
   aspect-ratio: 3 / 1;
   border: none;
@@ -182,10 +188,51 @@ textarea:not([rows]) {
 
 .sidebar {
   grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: min-content 1fr / 1fr;
+  gap: 2rem;
+  padding: 1rem;
 }
 
+.sidebar .logo {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+
+.sidebar .logo img {
+  width: 48px;
+  justify-self: center;
+}
+
+.sidebar ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.sidebar ul li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+
+.sidebar ul li img {
+  justify-self: center;
+}
+
+.sidebar ul li:nth-child(7) {
+  margin-top: 3rem;
+}
+
+.sidebar ul li a {
+  position: relative;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
 
 /* Utility classes */
 .icon {
@@ -222,6 +269,10 @@ textarea:not([rows]) {
 
 .fs-sm-heading {
   font-size: var(--fs-sm-heading);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
 }
 
 .text-primary-light {
